@@ -80,7 +80,18 @@ h2 {
     border: 1px solid #ddd;
 }
 
+
 /* Projects Section */
+#projects {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 .project {
     background: #e2e2e2;
     margin: 20px 0;
@@ -91,6 +102,16 @@ h2 {
 .project h3 {
     margin-top: 0;
 }
+
+.project ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.project ul li {
+    margin-bottom: 10px;
+}
+
 
 /* Footer Style */
 footer {
