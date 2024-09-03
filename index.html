@@ -1,97 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tharun Kumar Yedla - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Tharun Kumar Yedla</h1>
-        <p>Aspiring Web Developer</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tharun Kumar</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://rjshkhr.github.io/cleanfolio-minimal" class="link"
+          >Yt.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
     </header>
 
-    <section id="resume">
-    <h2>Resume</h2>
-    <p>You can download my resume by clicking the link below:</p>
-    <a href="C:\Users\tharu\Downloads\Tharun Kumar resume (2).pdf" download>Download My Resume</a>
-</section>
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Tharun Kumar.</span></h1>
+        <h2 class="about__role">A Front end Developer.</h2>
+        <p class="about__desc">
+          Hello, I'm Tharun Kumar Yedla, a passionate and motivated computer
+          science student with a strong foundation in software development and a
+          keen interest in web development. I thrive on challenges and
+          constantly set goals for myself, so I have something to strive toward.
+          I’m not comfortable with settling, and I’m always looking for an
+          opportunity to do better and achieve greatness.
+        </p>
 
+        <div class="about__contact center">
+          <a
+            href="https://github.com/TharunYedla/tharunyedla.github.io/blob/main/TharunKumarYresume.pdf"
+            target="_blank"
+          >
+            <span class="btn btn--outline">Resume</span>
+          </a>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> MY SQL, Java, JavaScript</li>
-            <li><strong>Web Development:</strong>  HTML, CSS, JavaScript, React</li>
-            <li><strong>System Design:</strong>  DNS, CDN, Scalable architecture, microservices</li>
-            <li><strong>Tools:</strong>  Git, Docker, VS Code, GitHub, Eclipse</li>
+          <a
+            href="https://github.com/TharunYedla"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/tharunkumar-yedla/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Pocket OCR</h3>
+            <p class="project__description">
+              Pocket OCR is a versatile and efficient Optical Character
+              Recognition (OCR) tool designed to empower users to seamlessly
+              extract text from images on both mobile and web platforms. One of
+              the standout features of Pocket OCR is its ability to support
+              multiple languages, making it an ideal choice for users around the
+              world.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Chakra UI</li>
+              <li class="project__stack-item">Node.js</li>
+            </ul>
+
+            <a
+              href="https://github.com/TharunYedla/pocketOCR"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://tharunyedla.github.io"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Nom-Nom Foodies</h3>
+            <p class="project__description">
+              Food Application is an innovative and comprehensive platform
+              designed to revolutionize how users discover, manage, and enjoy
+              their meals. Created with a focus on user experience and
+              functionality, this application leverages the power of modern web
+              and mobile technologies to deliver a seamless dining experience.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">Tailwind css</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com/TharunYedla/food-application"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https:tharunyedla.github.io"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Namaste React</h3>
+            <p class="project__description">
+              Developed using React, the application benefits from a
+              component-based architecture that ensures modularity, reusability,
+              and maintainability of code. Tailwind CSS was employed to
+              implement a clean, responsive design that adapts seamlessly to
+              various screen sizes and devices, providing a consistent user
+              experience across platforms. Additionally, the application
+              incorporates state management using React Hooks and context,
+              allowing for efficient and scalable handling of application state.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Tailwind css</li>
+              <li class="project__stack-item">JavaScript</li>
+            </ul>
+
+            <a
+              href="https://github.com/TharunYedla/namaste-react"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https:tharunyedla.github.io"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">Tailwind css</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">MySQL</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Redux</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">MongoDB</li>
+          <li class="skills__list-item btn btn--plain">DNS</li>
+          <li class="skills__list-item btn btn--plain">AWS</li>
+          <li class="skills__list-item btn btn--plain">CI/CD</li>
         </ul>
-    </section>
+      </section>
 
-   <section id="projects">
-    <h2>Projects</h2>
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:tharunkumaryedla@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
 
-    <div class="project">
-        <h3>Pocket OCR</h3>
-        <p><strong>Description:</strong> Pocket OCR is a mobile application designed to capture and convert text from images into editable text using Optical Character Recognition (OCR) technology...</p>
-        <p><strong>What I Did:</strong> I developed the Pocket OCR application to enhance text extraction and management capabilities for users...</p>
-        <p><strong>Technologies Used:</strong></p>
-        <ul>
-            <li>Programming Languages: Java (for Android), Swift (for iOS)</li>
-            <li>OCR Library: Tesseract OCR</li>
-            <li>Frameworks: Android SDK, iOS UIKit</li>
-            <li>Backend: Firebase for data storage and authentication</li>
-            <li>Development Tools: Android Studio, Xcode</li>
-            <li>Version Control: Git for source code management</li>
-        </ul>
-        <p><strong>Features:</strong></p>
-        <ul>
-            <li>Real-time text extraction from images</li>
-            <li>Support for multiple languages</li>
-            <li>Text editing and formatting options</li>
-            <li>Export to various formats (e.g., PDF, DOCX)</li>
-            <li>Integration with cloud storage services for easy access and sharing</li>
-        </ul>
-         <a href="https://github.com/tharunyedla/pocketocr">POCKET OCR </a>
-    </div>
-
-    <div class="project">
-        <h3>Nom-Nom Foodies</h3>
-        <p><strong>Description:</strong> Nom-Nom Foodies is a web application designed to help users discover and share their favorite recipes...</p>
-        <p><strong>What I Did:</strong> I was responsible for developing the front-end and back-end components of Nom-Nom Foodies...</p>
-        <p><strong>Technologies Used:</strong></p>
-        <ul>
-            <li>Programming Languages: JavaScript, HTML, CSS</li>
-            <li>Front-End Framework: React.js</li>
-            <li>Back-End Framework: Node.js with Express</li>
-            <li>Database: MongoDB</li>
-            <li>Version Control: Git for source code management</li>
-        </ul>
-        <p><strong>Features:</strong></p>
-        <ul>
-            <li>Recipe search and filter functionality</li>
-            <li>User registration and login</li>
-            <li>Ability to save favorite recipes and submit new ones</li>
-            <li>Review and rating system for recipes</li>
-            <li>Responsive design for mobile and desktop users</li>
-        </ul>
-        <a href="https://github.com/tharunyedla/food-application">Food Application</a>
-    </div>
-</section>
-
-       
-   
-
-    <section id="education">
-        <h2>Education</h2>
-        <p>B.Tech in Computer Science, JNTU Kalikiri</p>
-    </section>
-
-    <footer>
-        <h2>Contact Me</h2>
-        <p>Email: tharunkumaryedla@gmail.com</p>
-        <p><a href="https://www.linkedin.com/in/tharunyt123/">LinkedIn</a> | <a href="https://github.com/tharunyedla">GitHub</a></p>
+    <footer class="footer">
+      <a
+        href="https://github.com/rjshkhr/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        Created By Tharun Kumar
+      </a>
     </footer>
-</body>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
