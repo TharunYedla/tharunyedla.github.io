@@ -24,6 +24,7 @@ body {
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .light {
@@ -362,6 +363,14 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+.scroll-top i {
+  color: var(--clr-primary);
+}
+
+.scroll-top:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
@@ -410,4 +419,69 @@ main {
   .scroll-container {
     display: none;
   }
+}
+
+/* Education Section */
+.hidden {
+  display: none;
+}
+.education {
+  background-color: var(--clr-bg-alt);
+  padding: 40px 0;
+}
+
+.education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education__item {
+  background-color: var(--clr-bg);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education__item:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 6px 12px;
+}
+
+.education__item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--clr-fg-alt);
+  font-size: 1.5rem;
+}
+
+.education__item p {
+  margin-bottom: 5px;
+  color: var(--clr-fg);
+  font-size: 1rem;
+}
+
+.education__year {
+  font-weight: bold;
+  color: var(--clr-fg-alt);
+}
+
+.education__coursework-grid {
+  display: flex;
+  justify-content: flex-start; /* Adjusted to align coursework on the right side */
+  gap: 20px;
+}
+
+.education__coursework {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.education__coursework li {
+  margin-bottom: 5px;
+  color: var(--clr-fg);
 }
